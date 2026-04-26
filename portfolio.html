@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rammilan chaudhary — Full-Stack Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Fira+Code:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/Css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">&lt;<span>Dev</span>/&gt;</a>
+  <ul class="nav-menu">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <span class="float-code">const ai = new OpenAI({ model: 'gpt-4' });</span>
+  <span class="float-code">SELECT revenue, COUNT(*) FROM orders GROUP BY month;</span>
+  <span class="float-code">wp_register_rest_route('api/v1', '/posts');</span>
+  <span class="float-code">const [data, setData] = useState([]);</span>
+  <span class="float-code">model.predict(X_test);</span>
+
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Open to Remote Work</div>
+    <div class="hero-greeting">// Hello World! I'm</div>
+    <h1 class="hero-name">Rammilan<br><span class="line2">Chaudhary.</span></h1>
+    <p class="hero-title">
+      <strong>Full-Stack Web Developer</strong> from India.<br>
+      React · MySQL · Admin Dashboards · AI Integration · WordPress<br>
+      Building digital products for global clients.
+    </p>
+    <div class="hero-chips">
+      <span class="chip c-react"><span class="chip-dot"></span>React.js</span>
+      <span class="chip c-mysql"><span class="chip-dot"></span>MySQL</span>
+      <span class="chip c-dash"><span class="chip-dot"></span>Dashboards</span>
+      <span class="chip c-ai"><span class="chip-dot"></span>AI Integration</span>
+      <span class="chip c-wp"><span class="chip-dot"></span>WordPress</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-glow">View My Projects ???</a>
+      <a href="#contact" class="btn-outline">Let's Collaborate</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="stat-box">
+      <div class="stat-num">50+</div>
+      <div class="stat-lbl">Projects Completed</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">4+</div>
+      <div class="stat-lbl">Years Experience</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">15+</div>
+      <div class="stat-lbl">Global Clients</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="max-w">
+    <div class="sec-head reveal">
+      <div class="sec-tag">My Expertise</div>
+      <h2 class="sec-title">Skills & <em>Technologies</em></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal d1" style="--sk-color:#61dafb">
+        <div class="sk-icon" style="background:rgba(97,218,251,0.08);border-color:rgba(97,218,251,0.2)">⚛️</div>
+        <div class="sk-name" style="color:#61dafb">React.js</div>
+        <p class="sk-desc">Building fast, component-based SPAs and web apps with hooks, context API, Redux, and performance optimization for production-grade applications.</p>
+        <div class="sk-tags">
+          <span class="sk-tag">React 18</span><span class="sk-tag">Next.js</span>
+          <span class="sk-tag">Redux Toolkit</span><span class="sk-tag">TypeScript</span>
+          <span class="sk-tag">Tailwind CSS</span><span class="sk-tag">REST API</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w:95%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal d2" style="--sk-color:#f59e0b">
+        <div class="sk-icon" style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2)">🗄️</div>
+        <div class="sk-name" style="color:#f59e0b">MySQL & Backend</div>
+        <p class="sk-desc">Designing optimized databases, writing complex queries, stored procedures, and building robust Node.js / PHP backends with full CRUD & REST APIs.</p>
+        <div class="sk-tags">
+          <span class="sk-tag">MySQL</span><span class="sk-tag">Node.js</span>
+          <span class="sk-tag">Express.js</span><span class="sk-tag">PHP</span>
+          <span class="sk-tag">REST API</span><span class="sk-tag">JWT Auth</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w:88%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal d3" style="--sk-color:#10b981">
+        <div class="sk-icon" style="background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.2)">📊</div>
+        <div class="sk-name" style="color:#10b981">Admin Dashboards</div>
+        <p class="sk-desc">Pixel-perfect analytics dashboards with real-time data, charts, KPI cards, and role-based access control — used by businesses in the UK, US, and UAE.</p>
+        <div class="sk-tags">
+          <span class="sk-tag">Recharts</span><span class="sk-tag">Chart.js</span>
+          <span class="sk-tag">Material UI</span><span class="sk-tag">Ant Design</span>
+          <span class="sk-tag">WebSockets</span><span class="sk-tag">RBAC</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>92%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w:92%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal d1" style="--sk-color:#a78bfa">
+        <div class="sk-icon" style="background:rgba(124,58,237,0.08);border-color:rgba(124,58,237,0.2)">🤖</div>
+        <div class="sk-name" style="color:#a78bfa">AI Integration</div>
+        <p class="sk-desc">Integrating OpenAI GPT-4, Gemini, and LangChain into web apps — AI chatbots, content generators, smart search, and recommendation engines.</p>
+        <div class="sk-tags">
+          <span class="sk-tag">OpenAI API</span><span class="sk-tag">LangChain</span>
+          <span class="sk-tag">Python</span><span class="sk-tag">Gemini</span>
+          <span class="sk-tag">RAG</span><span class="sk-tag">Vector DB</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w:85%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal d2" style="--sk-color:#21759b">
+        <div class="sk-icon" style="background:rgba(33,117,155,0.08);border-color:rgba(33,117,155,0.2)">🌐</div>
+        <div class="sk-name" style="color:#21759b">WordPress</div>
+        <p class="sk-desc">Custom themes from scratch, WooCommerce stores, plugins, ACF, and headless WordPress with React frontend — SEO-optimized and blazing fast.</p>
+        <div class="sk-tags">
+          <span class="sk-tag">Custom Themes</span><span class="sk-tag">WooCommerce</span>
+          <span class="sk-tag">ACF Pro</span><span class="sk-tag">Elementor</span>
+          <span class="sk-tag">Headless WP</span><span class="sk-tag">WPML</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--w:90%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="max-w">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Portfolio</div>
+      <h2 class="sec-title">Featured <em>Projects</em></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Dashboard - featured -->
+      <div class="proj-card col-12 p-dash reveal">
+        <div>
+          <div class="proj-label"><span style="color:var(--accent3)">01 — Featured</span><span class="proj-badge b-dash">Dashboard</span></div>
+          <h3 class="proj-name">SalesIQ Analytics Platform</h3>
+          <p class="proj-desc">Real-time business analytics dashboard for a UK-based e-commerce company. Live sales tracking, inventory management, revenue forecasting, and role-based access. Reduced manual reporting time by 60%.</p>
+          <div class="proj-stack">
+            <span class="stack-pill">React.js</span><span class="stack-pill">Node.js</span>
+            <span class="stack-pill">MySQL</span><span class="stack-pill">Chart.js</span>
+            <span class="stack-pill">WebSockets</span><span class="stack-pill">AWS EC2</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link live">Live Demo →</a>
+            <a href="#" class="proj-link code">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="proj-mockup">
+          <div class="mockup-bar">
+            <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-body">
+            <div class="dash-mock">
+              <div class="dash-sidebar">
+                <div class="dash-sb-item active"></div>
+                <div class="dash-sb-item"></div>
+                <div class="dash-sb-item"></div>
+                <div class="dash-sb-item"></div>
+              </div>
+              <div class="dash-main">
+                <div class="dash-kpis">
+                  <div class="dash-kpi"><div class="dash-kpi-val">$84k</div><div class="dash-kpi-lbl">Revenue</div></div>
+                  <div class="dash-kpi"><div class="dash-kpi-val" style="color:#10b981">2.4k</div><div class="dash-kpi-lbl">Orders</div></div>
+                  <div class="dash-kpi"><div class="dash-kpi-val" style="color:#a78bfa">98%</div><div class="dash-kpi-lbl">Uptime</div></div>
+                </div>
+                <div class="dash-charts">
+                  <div class="dash-chart-box">
+                    <div class="dash-chart-title">Monthly Revenue</div>
+                    <div class="chart-bars">
+                      <div class="chart-bar"></div><div class="chart-bar"></div>
+                      <div class="chart-bar"></div><div class="chart-bar"></div>
+                      <div class="chart-bar"></div><div class="chart-bar"></div>
+                      <div class="chart-bar"></div>
+                    </div>
+                  </div>
+                  <div class="dash-chart-box">
+                    <div class="dash-chart-title">Traffic Split</div>
+                    <svg class="donut" viewBox="0 0 36 36">
+                      <circle cx="18" cy="18" r="14" fill="none" stroke="#1e2a45" stroke-width="4"/>
+                      <circle cx="18" cy="18" r="14" fill="none" stroke="url(#dg)" stroke-width="4" stroke-dasharray="60 40" stroke-linecap="round"/>
+                      <defs><linearGradient id="dg" x1="0%" y1="0%" x2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient></defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Chatbot -->
+      <div class="proj-card col-6 p-ai reveal d1">
+        <div class="proj-label"><span style="color:#a78bfa">02</span><span class="proj-badge b-ai">AI Integration</span></div>
+        <h3 class="proj-name">SmartSupport AI Chatbot</h3>
+        <p class="proj-desc">AI customer support chatbot for a US SaaS company. Trained on company docs using RAG, handles 80% queries automatically. React frontend + GPT-4 backend + MySQL user tracking.</p>
+        <div class="proj-stack">
+          <span class="stack-pill">React.js</span><span class="stack-pill">OpenAI GPT-4</span>
+          <span class="stack-pill">LangChain</span><span class="stack-pill">Python</span><span class="stack-pill">MySQL</span>
+        </div>
+        <div class="proj-mockup" style="height:155px;margin-bottom:20px">
+          <div class="mockup-bar"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body" style="padding:8px">
+            <div class="ai-mock">
+              <div class="ai-msg"><div class="ai-avatar"></div><div class="ai-bubble">Hello! How can I help you today?</div></div>
+              <div class="ai-msg user"><div class="ai-avatar"></div><div class="ai-bubble">How do I reset my password?</div></div>
+              <div class="ai-msg"><div class="ai-avatar"></div><div class="ai-bubble">Go to Settings → Security → Reset. I'll send an email link!</div></div>
+              <div class="ai-msg"><div class="ai-avatar"></div><div class="ai-typing"><span></span><span></span><span></span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-links" style="margin-top:auto">
+          <a href="#" class="proj-link live">Live Demo →</a>
+          <a href="#" class="proj-link code">GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- WordPress -->
+      <div class="proj-card col-6 p-wp reveal d2">
+        <div class="proj-label"><span style="color:#21759b">03</span><span class="proj-badge b-wp">WordPress</span></div>
+        <h3 class="proj-name">LuxeStore WooCommerce</h3>
+        <p class="proj-desc">Custom WooCommerce store for a German luxury fashion brand. Multi-currency, GDPR-compliant, SEO-optimized. Custom theme built from scratch with 98/100 PageSpeed score.</p>
+        <div class="proj-stack">
+          <span class="stack-pill">WordPress</span><span class="stack-pill">WooCommerce</span>
+          <span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span>
+          <span class="stack-pill">ACF Pro</span><span class="stack-pill">WPML</span>
+        </div>
+        <div class="proj-mockup" style="height:155px;margin-bottom:20px">
+          <div class="mockup-bar"><div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div></div>
+          <div class="mockup-body">
+            <div class="wp-mock">
+              <div class="wp-header"></div>
+              <div class="wp-posts">
+                <div class="wp-post"><div class="wp-post-title" style="width:80%"></div><div class="wp-post-meta"><div class="wp-meta-pill"></div><div class="wp-meta-pill"></div></div></div>
+                <div class="wp-post"><div class="wp-post-title" style="width:60%"></div><div class="wp-post-meta"><div class="wp-meta-pill"></div></div></div>
+                <div class="wp-post"><div class="wp-post-title" style="width:72%"></div><div class="wp-post-meta"><div class="wp-meta-pill"></div><div class="wp-meta-pill"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-links" style="margin-top:auto">
+          <a href="#" class="proj-link live">Live Demo →</a>
+          <a href="#" class="proj-link code">Case Study ↗</a>
+        </div>
+      </div>
+
+      <!-- React + MySQL HR -->
+      <div class="proj-card col-8 p-react reveal">
+        <div class="proj-label"><span style="color:#61dafb">04</span><span class="proj-badge b-react">React + MySQL</span></div>
+        <h3 class="proj-name">HireFlow — HR Management System</h3>
+        <p class="proj-desc">Full-stack HR management platform for a Dubai company. Employee onboarding, payroll, leave tracking, attendance, and role-based access. Built with React frontend and MySQL backend.</p>
+        <div class="proj-stack">
+          <span class="stack-pill">React.js</span><span class="stack-pill">Node.js</span>
+          <span class="stack-pill">MySQL</span><span class="stack-pill">JWT</span>
+          <span class="stack-pill">Material UI</span><span class="stack-pill">Docker</span>
+        </div>
+        <div class="proj-links" style="margin-top:auto">
+          <a href="#" class="proj-link live">Live Demo →</a>
+          <a href="#" class="proj-link code">GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- AI SaaS -->
+      <div class="proj-card col-4 p-ai reveal d1">
+        <div class="proj-label"><span style="color:#a78bfa">05</span><span class="proj-badge b-ai">AI SaaS</span></div>
+        <h3 class="proj-name">ContentGenius AI</h3>
+        <p class="proj-desc">AI content generation SaaS — blogs, social posts, product descriptions via GPT-4. 500+ users from 20+ countries. Stripe subscriptions + MySQL.</p>
+        <div class="proj-stack">
+          <span class="stack-pill">React</span><span class="stack-pill">OpenAI</span>
+          <span class="stack-pill">MySQL</span><span class="stack-pill">Stripe</span>
+        </div>
+        <div class="proj-links" style="margin-top:auto">
+          <a href="#" class="proj-link live">Live Demo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="max-w">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Work History</div>
+      <h2 class="sec-title">My <em>Experience</em></h2>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-item reveal">
+        <div class="exp-date">2022 ??? Present</div>
+        <div class="exp-company">Freelance Developer</div>
+        <div class="exp-role">Senior Full-Stack Developer (Remote ??? International)</div>
+        <p class="exp-desc">Working with clients across USA, UK, Germany, UAE, and Australia. Delivering complete web solutions from design to deployment.</p>
+        <div class="exp-highlights">
+          <div class="exp-hl">Built 20+ React + MySQL projects for international clients</div>
+          <div class="exp-hl">Integrated OpenAI APIs into 8+ live web applications</div>
+          <div class="exp-hl">Developed custom WordPress themes & WooCommerce stores</div>
+          <div class="exp-hl">Delivered real-time analytics dashboards for UK & US companies</div>
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">React</span><span class="exp-tag">MySQL</span>
+          <span class="exp-tag">OpenAI</span><span class="exp-tag">WordPress</span><span class="exp-tag">Node.js</span>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">2020 ??? 2022</div>
+        <div class="exp-company">WebCraft Agency</div>
+        <div class="exp-role">React Developer & WordPress Specialist</div>
+        <p class="exp-desc">Led frontend dev for enterprise SaaS. Managed a team of 3 developers, built 12+ WooCommerce stores, and admin dashboards with React + MySQL.</p>
+        <div class="exp-highlights">
+          <div class="exp-hl">Led development of 12 WordPress WooCommerce stores</div>
+          <div class="exp-hl">Built admin dashboards with React + MySQL integration</div>
+          <div class="exp-hl">Reduced page load time by 40% across all client sites</div>
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">WordPress</span><span class="exp-tag">React</span>
+          <span class="exp-tag">PHP/MySQL</span><span class="exp-tag">REST API</span>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">2019 ??? 2020</div>
+        <div class="exp-company">StartupHub India</div>
+        <div class="exp-role">Junior Web Developer</div>
+        <p class="exp-desc">Built internal tools, dashboards, and client websites using PHP, MySQL, and early React projects. Completed 10+ MVPs for early-stage startups.</p>
+        <div class="exp-highlights">
+          <div class="exp-hl">Built internal CRM tool with PHP + MySQL</div>
+          <div class="exp-hl">Learned React and shipped first SPA dashboard</div>
+        </div>
+        <div class="exp-tags">
+          <span class="exp-tag">PHP</span><span class="exp-tag">MySQL</span>
+          <span class="exp-tag">jQuery</span><span class="exp-tag">React (basics)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <div class="sec-tag">Get In Touch</div>
+      <h2 class="sec-title" style="margin-bottom:20px">Let's Build<br><em>Together</em></h2>
+      <div class="contact-avail"><span class="avail-dot"></span>Available for new projects</div>
+      <p class="contact-desc">Looking for a developer to build your React app, analytics dashboard, AI chatbot, or WordPress site? I work with clients worldwide and deliver quality, on time.</p>
+      <div class="contact-info-row"><span class="ci-icon">Email</span><a href="mailto:codenovasystem@gmail.com">codenovasystem@gmail.com</a></div>
+      <div class="contact-info-row"><span class="ci-icon">Chat</span><span>WhatsApp / Telegram available</span></div>
+      <div class="contact-info-row"><span class="ci-icon">Time</span><span style="color:var(--muted);font-size:13px">IST (UTC+5:30) - Flexible hours</span></div>
+      <div class="contact-social">
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">GitHub</a>
+        <a href="#" class="social-btn">Upwork</a>
+      </div>
+    </div>
+    <form class="contact-form reveal d2" id="contactForm" novalidate>
+      <div style="margin-bottom:24px">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:6px">Send a Message</h3>
+        <p style="color:var(--muted);font-size:13px">I typically reply within 24 hours.</p>
+      </div>
+      <input type="hidden" name="title" value="New codenovasystem portfolio enquiry" />
+      <input type="hidden" name="company_name" value="codenovasystem" />
+      <input type="hidden" name="admin_email" value="codenovasystem@gmail.com" />
+      <input type="hidden" name="reply_time" value="within 24 hours" />
+      <div class="form-row">
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="contactName">Your Name</label>
+          <input type="text" class="form-input" id="contactName" name="name" placeholder="Name" required/>
+        </div>
+        <div class="form-group" style="margin-bottom:0">
+          <label class="form-label" for="contactEmail">Email</label>
+          <input type="email" class="form-input" id="contactEmail" name="email" placeholder="john@company.com" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="projectType">Project Type</label>
+        <select class="form-select" id="projectType" name="projectType" required>
+          <option value="">Select a service...</option>
+          <option>React.js Web Application</option>
+          <option>Admin Dashboard</option>
+          <option>AI Integration / Chatbot</option>
+          <option>WordPress / WooCommerce</option>
+          <option>MySQL Database Design</option>
+          <option>Full-Stack Project</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="budgetRange">Budget Range (USD)</label>
+        <select class="form-select" id="budgetRange" name="budget" required>
+          <option>$0 - $105</option>
+          <option>$50 - $100</option>
+          <option>$100 - $200</option>
+          <option>$200 - $300</option>
+          <option>$300 - $400</option>
+          <option>$500+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="projectDetails">Tell me about your project</label>
+        <textarea class="form-textarea" id="projectDetails" name="message" placeholder="Describe your project, goals, and timeline..." required></textarea>
+      </div>
+      <button class="btn-submit" id="submitBtn" type="submit">Send Message</button>
+      <p id="formStatus" class="form-status is-info">Share a few project details and you will receive a confirmation email after submission.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">&lt;Rammilan.dev/&gt;</a>
+  <p>© 2025 Rammilan Chaudhary · Made with ❤️ in India · Open for Remote Work Worldwide</p>
+  <div class="footer-links">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/Js/custom.js"></script>
+</body>
+</html>
