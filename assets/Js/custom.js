@@ -47,6 +47,12 @@
     serviceId: 'service_7idgz6q',
     templateId: 'template_yzu2wei',
   };
+  const hasValidEmailJsConfig = Object.values(emailJsConfig).every(value => (
+    typeof value === 'string'
+    && value.trim() !== ''
+    && !value.startsWith('YOUR_EMAILJS_')
+    && value !== 'test'
+  ));
 
   const setFormStatus = (message, type = 'info') => {
     if (!formStatus) return;
@@ -56,16 +62,20 @@
 
   if (contactForm) {
     const emailJsReady = typeof emailjs !== 'undefined'
-      && !Object.values(emailJsConfig).some(value => value.startsWith('YOUR_EMAILJS_'));
+      && hasValidEmailJsConfig;
 
     if (emailJsReady) {
-      emailjs.init({
-        publicKey: emailJsConfig.publicKey,
-        limitRate: {
-          id: 'portfolio-contact-form',
-          throttle: 10000,
-        },
-      });
+      try {
+        emailjs.init({
+          publicKey: emailJsConfig.publicKey,
+          limitRate: {
+            id: 'portfolio-contact-form',
+            throttle: 10000,
+          },
+        });
+      } catch (error) {
+        console.error('EmailJS init failed:', error);
+      }
     }
 
     contactForm.addEventListener('submit', e => {
@@ -95,13 +105,19 @@
       ).then(() => {
         setFormStatus('Message sent successfully. Redirecting to the thank-you page...', 'success');
         window.location.href = 'thanks.html';
-      }).catch(() => {
+      }).catch(error => {
+        console.error('EmailJS send failed:', error);
+
         if (submitBtn) {
           submitBtn.textContent = 'Send Message';
           submitBtn.disabled = false;
         }
 
-        setFormStatus('Message failed to send right now. Please try again in a moment or email codenovasystem@gmail.com directly.', 'error');
+        const errorMessage = error?.text
+          || error?.message
+          || 'Message failed to send right now. Please try again in a moment or email codenovasystem@gmail.com directly.';
+
+        setFormStatus(errorMessage, 'error');
       });
     });
   }

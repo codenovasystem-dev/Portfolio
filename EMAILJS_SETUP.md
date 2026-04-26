@@ -15,9 +15,9 @@ Then paste them into:
 Replace:
 
 ```js
-publicKey: 'JFZbHxBdVXCGjKJyb',
-serviceId: 'service_7idgz6q',
-templateId: ' ',
+publicKey: 'YOUR_EMAILJS_PUBLIC_KEY',
+serviceId: 'YOUR_EMAILJS_SERVICE_ID',
+templateId: 'YOUR_EMAILJS_TEMPLATE_ID',
 ```
 
 ## 2. Main admin email template
@@ -95,7 +95,7 @@ This makes one submission do both:
 
 ## 5. Variables used by the form
 
-These fields are already present in [portfolio.html](/d:/Rammiln-portfolio/portfolio.html:396):
+These fields are already present in [index.html](/d:/Rammiln-portfolio/index.html:393):
 
 - `name`
 - `email`
