@@ -44,6 +44,12 @@
       pointer-events: none; z-index: 9998;
       transition: transform 0.25s ease;
     }
+    @media (hover: none), (pointer: coarse) {
+      .cursor,
+      .cursor-trail {
+        display: none;
+      }
+    }
 
     /* NOISE */
     body::after {
@@ -599,4 +605,107 @@
       .form-row { grid-template-columns: 1fr; }
       footer { flex-direction: column; gap: 20px; text-align: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+
+
+
+     
+
+    .thank_card {
+      width: min(100%, 640px);
+      padding: 42px 32px 34px;
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      background: var(--panel);
+      backdrop-filter: blur(18px);
+      text-align: left;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thank_card::before {
+      content: "";
+      position: absolute;
+      inset: -20% auto auto -10%;
+      width: 220px;
+      height: 220px;
+      border-radius: 999px;
+      background: var(--glow);
+      filter: blur(10px);
+    }
+
+  .thank_card  .tag {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(34, 211, 238, 0.35);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+ 
+
+
+   .thank_card .grid {
+      display: grid;
+      gap: 14px;
+      margin: 0 0 28px;
+    }
+
+    .item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      margin-top: 7px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.12);
+    }
+
+    .item strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .item span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 14px;
+      color: #03131d;
+      text-decoration: none;
+      font-weight: 700;
+      background: linear-gradient(135deg, #22d3ee, #67e8f9);
+    }
+
+    .ghost {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
     }
