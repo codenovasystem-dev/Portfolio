@@ -118,26 +118,10 @@
       opacity: 0.5;
       mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
     }
-    .float-code {
-      position: absolute;
-      font-family: 'Fira Code', monospace;
-      font-size: 12px;
-      color: rgba(0,212,255,0.15);
-      white-space: nowrap;
-      animation: floatDrift 12s ease-in-out infinite;
-      user-select: none;
-    }
-    .float-code:nth-child(1) { top: 15%; right: 8%; animation-delay: 0s; }
-    .float-code:nth-child(2) { top: 35%; right: 15%; animation-delay: 2s; color: rgba(124,58,237,0.15); }
-    .float-code:nth-child(3) { top: 60%; right: 5%; animation-delay: 4s; color: rgba(16,185,129,0.12); }
-    .float-code:nth-child(4) { top: 75%; right: 25%; animation-delay: 6s; }
-    .float-code:nth-child(5) { top: 20%; right: 38%; animation-delay: 1s; color: rgba(245,158,11,0.1); }
-    @keyframes floatDrift {
-      0%,100% { transform: translateY(0); opacity: 1; }
-      50% { transform: translateY(-18px); opacity: 0.6; }
-    }
 
-    .hero-content { position: relative; max-width: 680px; }
+  .hero .max-width{ max-width: 1200px;margin: 0 auto; width: 100%;}
+.hero .inner_part { position: relative; z-index: 1; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .hero-content { position: relative;  }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
       border: 1px solid rgba(0,212,255,0.3);
@@ -177,29 +161,6 @@
       animation: fadeUp 0.7s ease both 0.4s;
     }
     .hero-title strong { color: var(--text); font-weight: 600; }
-    .hero-chips {
-      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;
-      animation: fadeUp 0.7s ease both 0.5s;
-    }
-    .chip {
-      display: flex; align-items: center; gap: 6px;
-      border: 1px solid var(--border2);
-      padding: 6px 14px; border-radius: 6px;
-      font-size: 12px; font-weight: 500;
-      transition: border-color 0.2s, background 0.2s;
-    }
-    .chip:hover { background: rgba(255,255,255,0.03); }
-    .chip.c-react { border-color: rgba(97,218,251,0.3); color: #61dafb; }
-    .chip.c-mysql { border-color: rgba(245,158,11,0.3); color: var(--accent4); }
-    .chip.c-wp { border-color: rgba(33,117,155,0.3); color: #21759b; }
-    .chip.c-ai { border-color: rgba(124,58,237,0.3); color: #a78bfa; }
-    .chip.c-dash { border-color: rgba(16,185,129,0.3); color: var(--accent3); }
-    .chip-dot { width: 6px; height: 6px; border-radius: 50%; }
-    .chip.c-react .chip-dot { background: #61dafb; }
-    .chip.c-mysql .chip-dot { background: var(--accent4); }
-    .chip.c-wp .chip-dot { background: #21759b; }
-    .chip.c-ai .chip-dot { background: #a78bfa; }
-    .chip.c-dash .chip-dot { background: var(--accent3); }
 
     .hero-btns {
       display: flex; gap: 16px; align-items: center;
@@ -226,8 +187,8 @@
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); background: rgba(0,212,255,0.08); }
 
     .hero-right {
-      position: absolute; right: 60px; top: 50%;
-      transform: translateY(-50%);
+      /* position: absolute; right: 60px; top: 50%;
+      transform: translateY(-50%); */
       display: flex; flex-direction: column; gap: 16px;
       animation: fadeUp 0.7s ease both 0.7s;
     }
